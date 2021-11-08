@@ -13,6 +13,8 @@
   "author": "Trux",
   "license": "ISC",
   "dependencies": {
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "slugify": "^1.6.2",
+    "supertest": "^6.1.6"
   }
 }

@@ -8,12 +8,15 @@ const ExpressError = require("./expressError")
 
 const companyRoutes = require('./routes/companies')
 const invoiceRoutes = require('./routes/invoices')
+const industryRoutes = require('./routes/industries')
 
 app.use(express.json());
 
 app.use('/companies', companyRoutes)
 
 app.use('/invoices', invoiceRoutes)
+
+app.use('/industries', industryRoutes)
 
 /** 404 handler */
 
@@ -36,8 +39,8 @@ app.use((err, req, res, next) => {
 
 
 
-app.listen(3000, () => {
-  console.log("App on port 3000")
-})
+// app.listen(3000, () => {
+//   console.log("App on port 3000")
+// })
 
 module.exports = app;
